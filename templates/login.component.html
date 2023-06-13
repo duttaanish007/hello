@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.component.css">
+</head>
+
+<body>
+    
+    <h1>WELCOME </h1>
+    
+    <div class="Main">
+
+        <div class="registration">
+
+
+            <form id="register" method="post">
+                <label>Email id :</label>
+                <br>
+                <input type="email" name="email" id="name" placeholder="Enter Your Valid Email Id">
+                <br><br>
+                <label>Enter Password :</label>
+                <br>
+                <input type="password" placeholder="Enter The Password" id="myInput"><br>
+                <input type="checkbox" onclick="myFunction()">Show Password
+                <script>
+                    function myFunction() {
+                        var x = document.getElementById("myInput");
+                        if (x.type === "password") {
+                            x.type = "text";
+                        } else {
+                            x.type = "password";
+                        }
+                    }
+                </script>
+                <br><br>
+                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a></a> <input type="submit" name="submit" id="submit" value="Click To Login">
+            </form>
+
+
+
+        </div>
+
+    </div>
+    <footer><p class="center">Copyright &copy; Practice   Set   4 - All   rights   reserved</p></footer>
+</body>
+
+</html>
